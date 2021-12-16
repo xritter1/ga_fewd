@@ -1,7 +1,7 @@
 # Final Project: Trivia
 
 ## Proposal
-- See proposal PDF for wireframe.
+- See proposal [PDF](https://github.com/xritter1/ga_fewd/blob/main/final_project/GA_FEWD_final_project.pdf) for wireframe.
 
 ## Game Logic
 - 5 question cards that can be flipped
