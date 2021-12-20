@@ -1,0 +1,20 @@
+body {
+    font-family: 'Courier Prime', monospace;
+    background-color: black;
+}
+
+h1 {
+    color: white;
+}
+
+.intro {
+    margin: 10%;
+    background-color: #d5adc8;
+    background-image: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
+    transition: all .2s ease-in-out;
+    text-align: center;
+}
+
+.intro:hover {
+    transform: scaleY(5);
+}
