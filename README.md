@@ -1,4 +1,3 @@
 # ga_fewd
 
-## Exercise 4
-## Final Project
+A collection of labs during the class "Front End Web Development" with General Assembly
