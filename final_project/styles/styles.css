@@ -57,6 +57,7 @@
     }
     
     #nextround {
+        display: none;
         animation: glowing 2000ms infinite;
         border-radius: 15%;
         padding: 5px 5px;
