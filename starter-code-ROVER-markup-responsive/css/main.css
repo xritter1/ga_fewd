@@ -1,0 +1,396 @@
+/*
+ * Lay this page out - make it responsive, use grid, flex, position and media queries where needed.
+ *
+ * Colors-
+ * Green: #14a96d
+ * White: #fff
+ * Light gray: #f4f5f6
+ * Border gray: #cfd7de
+ * Dark text: #1b1f23
+ * Lighter text: #66727c
+ * Blue for links: #06748a
+ * Blue for hovered links: #033641
+ */
+
+
+/* Globals */
+
+body {
+    font-family: 'Cabin', sans-serif;
+}
+
+.rover-header-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: grey;
+    margin-left: 9%;
+}
+
+.rover-header-link {
+    color: grey;
+    text-decoration: none;
+}
+
+@media (max-width: 800px) {
+    .rover-header-link {
+        display: none;
+    }
+}
+
+.rover-header-left {
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rover-header-right {
+    margin-left: 15%;
+    margin-right: 1%;
+}
+
+.rover-header-right-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .rover-header-right-mobile {
+        display: block;
+    }
+}
+
+.rover-hero-container {
+    background-image: url("/img/hero.jpg");
+    background-size: cover;
+    z-index: -1;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 2%;
+    padding-right: 40%;
+    margin-left: 11%;
+    margin-right: 12%;
+}
+
+
+/* I looked this block up in the source code but needed to edit it  */
+
+@media screen and (max-width: 800px) {
+    .rover-hero-container {
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* had to add this to remove the bkg image */
+        background-image: none;
+        padding-right: 0px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .rover-hero-title {
+        display: none;
+    }
+}
+
+.rover-hero-title p {
+    padding-right: 30%;
+    /* the margins I looked in the dev tools */
+    margin: 0px 15px 25px 15px;
+}
+
+h1 {
+    font-size: 3em;
+    color: #66727c;
+}
+
+.rover-hero-subtitle {
+    color: #66727c;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1.3em;
+}
+
+@media screen and (max-width: 800px) {
+    .rover-hero-subtitle {
+        /* display: none; */
+        margin: 0 15px 25px 15px;
+    }
+}
+
+.buttonsearch {
+    background-color: #14a96d;
+    border: 2px solid #084b30;
+    color: white;
+    text-align: center;
+    padding: 2% 25%;
+    border: 1px solid black;
+    overflow: hidden;
+    /* white-space: nowrap; */
+    transition: ease-in-out 1s;
+}
+
+.buttonsearch:hover {
+    background-color: rgb(140, 216, 181, 1);
+}
+
+.buttonsearch-rover-cta {
+    background-color: #14a96d;
+    border: 2px solid #084b30;
+    color: white;
+    text-align: center;
+    padding: 2% 25%;
+    border: 1px solid black;
+    /* overflow: hidden;
+            white-space: nowrap; */
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 800px) {
+    .rover-cta-mobile {
+        display: none;
+    }
+}
+
+@media (min-width: 800px) {
+    .rover-cta-mobile {
+        display: none;
+    }
+}
+
+.rover-middle-section {
+    text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+    .rover-mobile-hero {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .rover-mobile-hero-container {
+        /* I initially thought here is a flex box but it didn't look as clean */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        padding: 20px 10px 20px 10px;
+    }
+}
+
+
+/* I needed to look this one up because my images didn't have the same height, but I edited it.  */
+
+@media screen and (max-width: 800px) {
+    .rover-mobile-hero {
+        max-width: 100%;
+        /* min-width: 0; */
+        max-height: 300px;
+    }
+}
+
+.rover-two-boxes-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+
+@media (max-width: 800px) {
+    .rover-two-boxes-container {
+        grid-template-columns: 1fr;
+        display: inline;
+    }
+}
+
+.rover-facts-container {
+    margin-left: 20%;
+    width: 400px;
+    overflow: hidden;
+}
+
+@media (max-width: 800px) {
+    .rover-facts-container {
+        display: block;
+    }
+}
+
+.rover-fact-indiv img {
+    width: 60px;
+    margin-right: 20px;
+    align-items: flex-start;
+}
+
+.rover-fact-indiv p {
+    margin-left: 80px;
+    text-align: left;
+}
+
+.rover-fact-indiv {
+    display: flex;
+    align-items: center;
+    flex-flow: wrap;
+    white-space: wrap;
+    overflow: hidden;
+    margin-right: 5%;
+}
+
+.rover-cta-container {
+    border: 1px solid #cfd7de;
+    margin-right: 25%;
+}
+
+.rover-cta-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f5f6;
+}
+
+.rover-cta-header img {
+    width: 30px;
+    padding-right: 20px;
+    padding-left: 10px;
+}
+
+.rover-cta-bottom-container {
+    border-top: 1px solid #cfd7de;
+    padding: 5% 5%;
+}
+
+ul {
+    text-align: left;
+    /* line-height: 1.5em; */
+    /* list-style-type: disc; */
+}
+
+li {
+    padding: 7px;
+}
+
+.rover-protections {
+    line-height: 1.5em;
+    margin-right: 25%;
+}
+
+@media (max-width: 800px) {
+    .rover-cta-box {
+        margin: 5% 10% 5% 15%;
+        overflow: hidden;
+    }
+}
+
+.rover-action-shot {
+    background-image: url("/img/lady-with-her-dogs.jpg");
+    background-size: cover;
+    z-index: -1;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 2%;
+    padding-right: 40%;
+    margin-left: 11%;
+    margin-right: 12%;
+    margin-top: 15%;
+    position: relative
+}
+
+@media (max-width: 800px) {
+    .rover-action-shot {
+        ;
+    }
+}
+
+.rover-action-quote-container {
+    background-color: #f4f5f6;
+    border: #cfd7de;
+    padding: 5%;
+    width: 60%;
+    line-height: 2em;
+    top: -50px;
+    position: absolute;
+    width: 300px;
+}
+
+@media (max-width: 800px) {
+    .rover-action-quote-container {
+        position: relative;
+    }
+}
+
+.rover-corinna {
+    color: #777777;
+    font-size: 1.5em;
+}
+
+.rover-action-dash {
+    border: 1px solid #14a96d;
+    width: 15%;
+}
+
+.rover-123-container {
+    margin: 5% 10%;
+    align-items: center;
+    /* text-align: center; */
+}
+
+@media (max-width: 800px) {
+    .rover-123-container {
+        align-items: left;
+        margin: 1% 10%;
+    }
+}
+
+.rover-123-item-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px 20px;
+}
+
+@media (max-width: 800px) {
+    .rover-123-item-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2px 2px;
+        display: block;
+        margin: 20px 0px 30px 30px;
+    }
+}
+
+.rover-123-container-title {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.rover-123-item img {
+    height: 20%;
+    align-items: center;
+}
+
+
+/* here I looked in the Devtools, wasn't expecting a flex */
+
+.rover-123-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+@media (max-width: 800px) {
+    .rover-123-item img {
+        /* I looked max-height up */
+        max-height: 80px;
+    }
+}
+
+@media (max-width: 800px) {
+    .rover-123-item {
+        padding: 20px 0px;
+    }
+}
