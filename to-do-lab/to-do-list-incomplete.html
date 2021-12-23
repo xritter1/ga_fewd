@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- set viewport to device width to allow responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CDN -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- JS -->
+    <!-- <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script> -->
+
+
+    <title>Lab To Do List</title>
+
+</head>
+
+<body>
+    <!-- container for header
+container for two forms (two items, one textarea and one button) 
+four containers in a grid; target one tile with the new to-do-items?
+-->
+
+    <div class="container">
+        <h1 class="text-center">To Do List</h1>
+        <div class="row">
+            <form class="form-inline">
+                <input type="text" placeholder="Enter to-do here..." id="textInput" class="textinput">
+                <input type="button" value="Add" id="addButton" class="addbutton">
+            </form>
+        </div>
+
+        <div class="bigcontainer">
+            <div class="todo">
+                <div class="headerwrapper">
+                    <div class="header"> My To-Dos </div>
+                    <div class="number"> number
+                    </div>
+                </div>
+                <div class="todo-content">
+                    <ul>
+                        <li>
+                            content 1
+                        </li>
+                        <li>
+                            content 1
+                        </li>
+                        <li>
+                            content 1
+                        </li>
+                        <li>
+                            content 1
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="done">
+                <div class="headerwrapper">
+                    <div class="header"> My To-Dos </div>
+                    <div class="number"> number</div>
+                </div>
+                <div class="done-content">
+                    <div id="list">
+                        <ul>
+                            <li>
+                                hhi
+                            </li>
+                        </ul>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- <div id="urlID"> </div> -->
+
+        </div>
+    </div>
+</body>
+<script src="scripts/app.js"></script>
+
+</html>
