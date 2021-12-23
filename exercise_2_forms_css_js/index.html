@@ -1,0 +1,96 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Nov 30 lesson</title>
+    <meta name="description" content="Rover sample site">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="stylesheet" href="css/normalize.css">  -->
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <h1>Hello Class these are forms</h1>
+
+
+    <!-- button in a form -->
+    <form>
+        <!-- fieldset macht einen kringel um einheiten -->
+        <fieldset>
+            <!-- legends make "Form in top row" -->
+            <legend> Form </legend>
+            <!-- label adds a word before the textbox -->
+            <label for="username"> Username:</label>
+            <!-- placeholder is ...check html to see -->
+            <input id="textbar" type="text" placeholder="Enter Username; we see it">
+            <label for="password"> Password:</label>
+            <input id="password" type="password" placeholder="Enter Password; we won't see it">
+
+        </fieldset>
+        <fieldset>
+            <!-- enables a calendar to select -->
+            <input type="date">
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Billing info</legend>
+            <!-- only numbers -->
+            <input id="billing-info" placeholder="billing" type="number">
+        </fieldset>
+
+        <!-- we target this with the JS -->
+        <input button id="submit-button" type="submit">
+
+        <fieldset>
+            <!-- add a comment and define textarea box -->
+            <textarea placeholder="Enter comment here" rows="10" cols="30" id="comment" class="myClass"> </textarea>
+        </fieldset>
+
+        <!-- Dropdown menus with select -->
+        <fieldset>
+            <legend> Select Problem</legend>
+            <select id="problem-select">
+               <!--  this will be its own entry -->
+                    <option value="nono"> No Problem</option>
+                     <!-- optgroup is heading for more option and not clickable -->
+                <optgroup label="heating">
+                    <!-- values are crucial -->
+                    <!-- you give options under heating in the dropdown:-->
+                    <option value="too-much-heat">Too Much Heat</option>
+                    <option value="not-enough-heat">Not enough Heat</option>
+                </optgroup>
+                <optgroup label="plumbing">
+                    <option value="too-much-water">Too Much Water</option>
+                    <option value="not-enough-water">Not enough Water</option>
+                </optgroup>
+            </select>
+
+            <!-- adding checkboxes using the type checkbox, it'll be square-->
+            <input type="checkbox" id="AC">
+            <label for="AC">AC Broken?</label>
+
+            <input type="checkbox" id="AC">
+            <label for="pow">Power Broken?</label>
+
+            <input type="checkbox" id="AC">
+            <label for="gas">Gas Broken?</label>
+        </fieldset>
+
+        <!-- this is a checkbox but a round shape -->
+        <fieldset>
+            <input type="radio"> Fries </input>
+
+        </fieldset>
+
+    </form>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

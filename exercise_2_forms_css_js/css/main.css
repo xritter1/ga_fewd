@@ -1,0 +1,17 @@
+button {
+    background-color: red;
+    width: 20%;
+    height: 10vh;
+    /* upon hovering */
+    transition: background-color 0.8s ease-in-out;
+    /* transition: height 0.3s ease-out; */
+} 
+
+button:hover {
+    background-color: blue;
+    height: 20vh;
+}
+
+.gone:hover {
+    display:none;
+}
