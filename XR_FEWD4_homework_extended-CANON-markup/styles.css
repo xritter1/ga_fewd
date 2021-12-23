@@ -1,0 +1,146 @@
+/* elements */
+
+h1 {
+    color: black;
+    font-family: Roboto;
+}
+
+
+/* classes */
+
+.main {
+    font-family: Roboto;
+}
+
+.header {
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.container-logo {
+    background-color: white;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    padding-right: 80px;
+}
+
+.container-navbar {
+    background-color: white;
+    height: 20px;
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.navbar-nav {
+    background-color: white;
+    color: black;
+    display: flex;
+}
+
+.navbar-item img {
+    width: 50px;
+}
+
+.navbar-item {
+    padding: 10px;
+}
+
+.material-icons.md-36 {
+    font-size: 48px;
+}
+
+.nav {
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-start;
+    font-size: 1.5rem;
+    margin-left: 30px;
+}
+
+.top-nav {
+    margin-right: 50px;
+    display: flex;
+}
+
+.nav-item {
+    padding: 10px;
+}
+
+.top-nav a {
+    color: black;
+    text-decoration: none;
+}
+
+.top-nav a:link {
+    color: black;
+}
+
+.top-nav a:hover {
+    color: black;
+    text-decoration: underline 5px red;
+}
+
+
+/* how to change the world box(es) */
+
+.changeworld {
+    background-color: white;
+    padding: 50px;
+}
+
+
+/* Create three equal columns for the grid*/
+
+.griddity {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+    overflow: hidden;
+}
+
+.bilder {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Responsive layout - makes a two column-layout instead of three columns */
+
+@media screen and (max-width: 800px) {
+    .griddity {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 25px;
+    }
+}
+
+
+/* Responsive layout - one column */
+
+@media screen and (max-width: 600px) {
+    .griddity {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 25px;
+    }
+    .top-nav {
+        display: none;
+    }
+}
+
+
+/* footer */
+
+.footer {
+    background-color: rgb(233, 231, 231);
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+}
