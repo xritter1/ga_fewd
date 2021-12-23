@@ -1,0 +1,111 @@
+button {
+    background-color: red;
+    width: 20%;
+    height: 10vh;
+    /* upon hovering */
+    transition: background-color 0.8s ease-in-out;
+    /* transition: height 0.3s ease-out; */
+} 
+
+button:hover {
+    background-color: blue;
+    height: 20vh;
+}
+
+.gone:hover {
+    display:none;
+}
+
+.square {
+    margin: 10%;
+    height: 250px;
+    width: 250px;
+    color: white;
+}
+
+.pink {
+    background-color: orchid;
+}
+
+.pink:hover {
+    transform: rotate(220deg);
+    /* transform: skew(10deg); */
+}
+
+.green {
+    background-color: greenyellow;
+    /* transform: rotate(-220deg); */
+}
+
+.green:hover {
+    animation: roll 3s infinite;
+    transform: rotate(30deg);
+}
+/* here you specify the roll animation. 0/100 could be replaced with from/to */
+@keyframes roll {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+
+
+#big-menu.toggle-open {
+    transform: translateX(0%);
+    opacity: 1;
+}
+#big-menu-close {
+    background: white
+} */
+
+.hamburger-box {
+    display: block; /* I bet you forgot img is an inline element didn't you? */
+    margin: 50px auto;
+    transition: 0.5s ease-in-out;
+  }
+  
+  #big-menu {
+    background-color: rgba(7,34,53,1);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    overflow-y: scroll;
+    padding: 15px 30px;
+    position: fixed;
+    transition: all 0.35s ease-in-out;
+    transform: translateX(100%);
+    z-index: 10;
+  }
+  #big-menu.toggle-open {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  #big-menu a, #big-menu a:focus, #big-menu a:visited {
+    color: white;
+    display: block;
+    font-size: 50px;
+    margin: 25px auto;
+    text-align: center;
+    text-decoration: none;
+  }
+  #big-menu-close {
+    background-color: white;
+    color: darkred;
+  }
+
+  .button {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px auto;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 300px;
+  }
